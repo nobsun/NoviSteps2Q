@@ -15,11 +15,23 @@ cradle:
     - path: "./app/abc243d/Paths_NoviSteps2Q.hs"
       component: "NoviSteps2Q:exe:abc243d"
 
+    - path: "./app/abc328d/Main.hs"
+      component: "NoviSteps2Q:exe:abc328d"
+
+    - path: "./app/abc328d/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:abc328d"
+
     - path: "./app/add-entry/Main.hs"
       component: "NoviSteps2Q:exe:add-entry"
 
     - path: "./app/add-entry/Paths_NoviSteps2Q.hs"
       component: "NoviSteps2Q:exe:add-entry"
+
+    - path: "./app/arc108b/Main.hs"
+      component: "NoviSteps2Q:exe:arc108b"
+
+    - path: "./app/arc108b/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:arc108b"
 
     - path: "./app/judge-hs/Main.hs"
       component: "NoviSteps2Q:exe:judge-hs"
