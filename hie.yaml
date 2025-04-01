@@ -1,0 +1,34 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "NoviSteps2Q:lib"
+
+    - path: "./app/Main.hs"
+      component: "NoviSteps2Q:exe:NoviSteps2Q"
+
+    - path: "./app/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:NoviSteps2Q"
+
+    - path: "./app/abc243d/Main.hs"
+      component: "NoviSteps2Q:exe:abc243d"
+
+    - path: "./app/abc243d/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:abc243d"
+
+    - path: "./app/add-entry/Main.hs"
+      component: "NoviSteps2Q:exe:add-entry"
+
+    - path: "./app/add-entry/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:add-entry"
+
+    - path: "./app/judge-hs/Main.hs"
+      component: "NoviSteps2Q:exe:judge-hs"
+
+    - path: "./app/judge-hs/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:judge-hs"
+
+    - path: "./test"
+      component: "NoviSteps2Q:test:NoviSteps2Q-doctest"
+
+    - path: "./test"
+      component: "NoviSteps2Q:test:NoviSteps2Q-test"

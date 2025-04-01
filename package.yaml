@@ -1,0 +1,176 @@
+name:                NoviSteps2Q
+version:             0.0.0
+github:              nobsun/NoviSteps2Q
+license:             BSD3
+author:              Nobuo Yamashita
+maintainer:          nobsun@sampou.org
+copyright:           © 2025, Nobuo Yamashita
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Experiment
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/nobsun/NoviSteps2Q#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- utf8-string
+- unicode-show
+- hspec
+- main-tester
+- Cabal
+- Cabal-syntax
+- QuickCheck
+- adjunctions
+- array
+- attoparsec
+- bifunctors
+- binary
+- bitvec
+- bytestring
+- comonad
+- containers
+- contravariant
+- deepseq
+- directory
+- distributive
+- exceptions
+- extra
+- fgl
+- filepath
+- free
+- ghc-bignum
+- ghc-boot-th
+- ghc-prim
+- hashable
+- heaps
+- indexed-traversable
+- indexed-traversable-instances
+- integer-gmp
+- integer-logarithms
+- kan-extensions
+- lens
+- linear-base
+- list-t
+- massiv
+- megaparsec
+- mono-traversable
+- mtl
+- mutable-containers
+- mwc-random
+- parallel
+- parsec
+- parser-combinators
+- pretty
+- primitive
+- process
+- profunctors
+- psqueues
+- random
+- reflection
+- regex-tdfa
+- safe-exceptions
+- scientific
+- semialign
+- semigroupoids
+- split
+- stm
+- strict
+- strict-lens
+- tagged
+- template-haskell
+- text
+- tf-random
+- these
+- these-lens
+- time
+- transformers
+- trifecta
+- unboxing-vector
+- unix
+- unordered-containers
+- utility-ht
+- vector
+- vector-algorithms
+- vector-stream
+- vector-th-unbox
+- xhtml
+
+language: GHC2021
+
+default-extensions:
+- CPP
+- ImplicitParams
+- ImportQualifiedPost
+- LambdaCase
+- LexicalNegation
+- MultiWayIf
+- NPlusKPatterns
+- OverloadedStrings
+- DataKinds
+- PolyKinds
+- NoStarIsType
+- TypeFamilyDependencies
+- UndecidableInstances
+
+ghc-options:
+- -Wall
+
+library:
+  source-dirs: src
+
+executables:
+  abc243d:
+    main:               Main.hs
+    source-dirs:        app/abc243d
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps2Q
+
+  add-entry:
+    main:                Main.hs
+    source-dirs:         app/add-entry
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps2Q
+
+  judge-hs:
+    main:                Main.hs
+    source-dirs:         app/judge-hs
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps2Q
+
+  NoviSteps2Q:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps2Q
+
+tests:
+  NoviSteps2Q-test:
+    main:                spec.hs
+    source-dirs:         test
+    dependencies:
+    - NoviSteps2Q
+    - hspec
+    - main-tester
+
+  NoviSteps2Q-doctest:
+    main:                doctests.hs
+    source-dirs:         test
+    dependencies:
+    - NoviSteps2Q
+    - doctest
