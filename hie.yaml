@@ -33,6 +33,12 @@ cradle:
     - path: "./app/arc108b/Paths_NoviSteps2Q.hs"
       component: "NoviSteps2Q:exe:arc108b"
 
+    - path: "./app/joi2009yoc/Main.hs"
+      component: "NoviSteps2Q:exe:joi2009yoc"
+
+    - path: "./app/joi2009yoc/Paths_NoviSteps2Q.hs"
+      component: "NoviSteps2Q:exe:joi2009yoc"
+
     - path: "./app/judge-hs/Main.hs"
       component: "NoviSteps2Q:exe:judge-hs"
 

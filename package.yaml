@@ -127,6 +127,14 @@ library:
   source-dirs: src
 
 executables:
+  joi2009yoc:
+    main:               Main.hs
+    source-dirs:        app/joi2009yoc
+    ghc-options:
+    - -rtsopts
+    dependencies:
+    - NoviSteps2Q
+
   arc108b:
     main:               Main.hs
     source-dirs:        app/arc108b
